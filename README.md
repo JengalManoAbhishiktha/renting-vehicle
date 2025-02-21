@@ -14,7 +14,6 @@ This project demonstrates key **Object-Oriented Programming (OOP)** concepts in 
 4. [How to Run](#how-to-run)
 5. [Usage](#usage)
 6. [OOP Concepts Demonstrated](#oop-concepts-demonstrated)
-7. [License](#license)
 
 ---
 
@@ -43,6 +42,31 @@ The project includes the following key classes:
 4. **VehicleRentals**: Demonstrates method overloading with multiple `rent` methods.
 5. **VehicleRentalBase** and **Example**: Demonstrates method overriding with customized behavior.
 
+---
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/vehicle-management-system.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd vehicle-management-system
+   ```
+
+3. Compile the code using `javac`:
+   ```bash
+   javac Vehicle.java
+   ```
+
+4. Run the compiled Java program:
+   ```bash
+   java Vehicle
+   ```
+
+---
 
 ## Usage
 
