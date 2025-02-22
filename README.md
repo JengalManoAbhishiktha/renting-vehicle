@@ -1,84 +1,53 @@
-# Vehicle Management System in Java
-
-This project demonstrates key **Object-Oriented Programming (OOP)** concepts in Java, including:
-
-- **Inheritance**: Bike and Car classes inherit properties from a base Vehicle class.
-- **Encapsulation**: Vehicle details (name, type, and amount) are managed with getter and setter methods.
-- **Method Overloading**: A demonstration of multiple methods with the same name but different parameter lists.
-- **Method Overriding**: Child classes override the behavior of parent class methods.
-
-## Table of Contents
-1. [Overview](#overview)
-2. [Features](#features)
-3. [Code Structure](#code-structure)
-4. [How to Run](#how-to-run)
-5. [Usage](#usage)
-6. [OOP Concepts Demonstrated](#oop-concepts-demonstrated)
-
----
+# Vehicle Rental System in Java
 
 ## Overview
+This project is a Java-based **Vehicle Rental System** that demonstrates core **Object-Oriented Programming (OOP) concepts**, **multithreading**, and **exception handling**. It covers key principles such as:
 
-The project provides an implementation of a simple Vehicle Management System in Java, showcasing core OOP principles. It includes classes for different types of vehicles and demonstrates inheritance, encapsulation, method overloading, and method overriding.
-
----
+- **Inheritance** (Vehicle hierarchy: `VehicleBase`, `Bike`, `Car`)
+- **Encapsulation** (Secure data access with `VehicleDetails` class)
+- **Method Overloading** (Different ways to rent vehicles in `VehicleRentals`)
+- **Method Overriding** (Polymorphic behavior in `Example` class)
+- **Multithreading** (Simulated vehicle rental and checking process using `RentalThread` and `VehicleCheckThread`)
+- **Exception Handling** (Validation for incorrect inputs)
 
 ## Features
+- Rent **two-wheeler and four-wheeler vehicles**.
+- Maintain user details with **encapsulation and validation**.
+- Simulate **rental processing and vehicle checks using multithreading**.
+- Handle invalid inputs gracefully with **exception handling**.
 
-- **Vehicle Information**: Set and retrieve vehicle details like name, type, and rent amount.
-- **Inheritance**: Specialized vehicle types (bike and car) extend from a base vehicle class.
-- **Overloading**: Demonstrates renting vehicles with different parameter options.
-- **Overriding**: Specialized rental types override default rental messages.
-
----
-
-## Code Structure
-
-The project includes the following key classes:
-
-1. **VehicleBase**: Base class for all vehicles, providing a basic `vehi()` method.
-2. **Bike** and **Car**: Inherit from `VehicleBase` and add their own unique methods.
-3. **VehicleDetails**: Encapsulates vehicle details using private fields and public getters/setters.
-4. **VehicleRentals**: Demonstrates method overloading with multiple `rent` methods.
-5. **VehicleRentalBase** and **Example**: Demonstrates method overriding with customized behavior.
-
----
+## Technologies Used
+- Java
+- OOP Principles
+- Multithreading
+- Exception Handling
 
 ## How to Run
+### Prerequisites:
+Ensure you have the following installed:
+- Java Development Kit (JDK 8 or later)
+- A Java IDE (IntelliJ IDEA, Eclipse, or VS Code) or a command-line terminal
 
+### Steps:
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/vehicle-management-system.git
+   ```sh
+   git clone https://github.com/your-username/vehicle-rental-system.git
    ```
-
 2. Navigate to the project directory:
-   ```bash
-   cd vehicle-management-system
+   ```sh
+   cd vehicle-rental-system
    ```
-
-3. Compile the code using `javac`:
-   ```bash
+3. Compile the Java program:
+   ```sh
    javac Vehicle.java
    ```
-
-4. Run the compiled Java program:
-   ```bash
+4. Run the program:
+   ```sh
    java Vehicle
    ```
 
----
-
-## Usage
-
-The program will:
-- Print messages demonstrating the inheritance hierarchy.
-- Set and retrieve encapsulated vehicle details.
-- Demonstrate overloaded methods for renting different types of vehicles.
-- Show overridden methods with custom behavior for different rental types.
-
-Sample output:
-
-```plaintext
+## Example Output
+```
 It is a bike
 vehicle
 It is a car
@@ -92,15 +61,15 @@ Renting a four-wheeler vehicle
 Two-wheeler rent
 Three-wheeler rent
 Two-wheeler (overridden)
+
+Starting rental processing and vehicle checks...
+Ravi is processing the rental...
+Amit is processing the rental...
+Checking vehicle: Bike
+Checking vehicle: Car
+Bike check completed successfully.
+Car check completed successfully.
+Ravi rental processed for $1000
+Amit rental processed for $1200
+Rental process completed.
 ```
-
----
-
-## OOP Concepts Demonstrated
-
-1. **Inheritance**: The `Bike` and `Car` classes inherit from `VehicleBase`, reusing its methods and adding new functionality.
-2. **Encapsulation**: Private fields in `VehicleDetails` are accessed and modified using public getters and setters.
-3. **Method Overloading**: The `VehicleRentals` class has multiple `rent` methods with different parameter lists.
-4. **Method Overriding**: The `Example` class overrides the `tworents` method from `VehicleRentalBase`.
-
----
